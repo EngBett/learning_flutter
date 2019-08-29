@@ -1,22 +1,29 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 class FirstScreen extends StatelessWidget{
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Material(
-        color: Colors.lightBlueAccent,
+        color: Colors.white,
         child: Center(
             child: Text(
-                "Hello Flutter",
+                "Your Number is: ${generateNumber()}",
                 textDirection: TextDirection.ltr,
                 style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40.0
+                    color: Colors.lightBlue,
+                    fontSize: 18.0
                 )//style
             ) //Text
         ) //Center
     ); //Material
+  }
+
+  int generateNumber(){
+    var rand = Random();
+    return rand.nextInt(10);
   }
 
 }
