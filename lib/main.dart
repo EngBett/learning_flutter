@@ -14,7 +14,7 @@ class MyFlutterApp extends StatelessWidget{
         home: Scaffold(
             appBar: AppBar(
                 title: Center(
-                    child:Text("First Flutter App")
+                    child:Text("Flutter App")
                 )//center
             ),
             body:FirstScreen()
